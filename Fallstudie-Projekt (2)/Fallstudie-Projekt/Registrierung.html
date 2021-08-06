@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="Registrierung.js"></script>
+        <link rel="stylesheet" href="Registrierung.css">
+        <script src="lib/jquery_v3.2.1.min.js"></script>
+        <script src="lib/popper_v1.12.9.min.js"></script>
+        <script src="lib/bootstrap_v4.min.js" ></script>
+        <script src="lib/elaspix_lookupDropdown.js" ></script>
+        <script src="lib/elaspix_inputtext.js" ></script>
+        <script src="lib/elaspix_eventclock.js" ></script>
+        <script src="lib/elaspix_dropdown_desktop.js" ></script>
+        <script src="lib/elaspix_rueckgabe.js" ></script>	
+        <script src="lib/jquery.md5.js" ></script>
+        
+       
+       
+             
+            
+        
+    </head>
+    
+    <body style="background-image: url(pics/backround.png);">
+
+        <nav class="navbar navbar-expand-lg navbar-light "id="navbar" >
+          <a class="navbar-brand" href="landingpage-new.html"><img src="pics/inspiremeLogo.png" width="19%"></a>  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" style="margin-left: -500px;" href="SavedStyles.html"><b>Saved Styles</b></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" style="margin-left: -350px;" href="getInspired.html"><b>InspireMe</b></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"style="margin-left: -200px;" href="Style-Editor.html"><b>Style-Editor</b></a>
+                </li>
+              </ul>
+              <button id="button-navbar"  onclick="location.href='inspireme_login.html';"><b>SIGN IN</b></button>
+            </div>
+          </nav>
+      
+
+        <div class="container-fluid text-center" id="containerLogin">
+            <h1 style="margin-top: 10%;"><b>Melde dich hier an</b></h1>
+            <br>
+            <input type="text" id="vorname" placeholder="Vorname">
+            <br><br>
+            <input type="text" id="nachname" placeholder="Nachname">
+            <br><br>
+             <input type="email" id="emailInput" placeholder="E-Mail Adresse oder Username" required>
+            <br><br>
+             <input type="password" id="passwordInput" placeholder="Passwort">
+             <br><br>
+             <input type="password" id="passwordRepeatInput" placeholder="Passwort wiederholen">
+            
+            
+            
+             <p style="margin-top: 5%;">Hiermit akzeptiere ich die <br> 
+              <a style="font-style: italic;color: black;" href=""><b>Datenschutzerklärung</b></a>              und die  <a style="font-style: italic;color: black;" href=""><b>AGBs</b></a>
+            </p>
+       
+            <br>
+            <button type="button" id="loginButton" onclick="Registrierung();">REGISTRIEREN</button >
+        
+        </div>
+        </div>
+        
+
+        
+        
+    </body>
+</html>

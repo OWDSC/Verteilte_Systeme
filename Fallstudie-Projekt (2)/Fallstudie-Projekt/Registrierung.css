@@ -1,0 +1,136 @@
+
+#button-navbar {
+    background-color: #20c997;
+
+    border: none ;
+    border-radius: 6px;
+}
+
+
+
+
+#navbar {
+    background-color: rgba(210, 210, 210, 0.49);
+}
+
+.nav-link {
+    color: black;
+    margin-left: 10px;
+}
+
+
+#Button {
+    margin-right: 10px;
+    background-color: white;
+    color: black;
+    border: solid black 1px;
+    border-radius: 8px;
+
+}
+
+#impressum {
+    
+    color: black;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    border: none;
+    
+}
+
+#row1 {
+    background-color: lightgrey;
+    margin-top: 15%;
+}
+
+#row2 {
+    background-color: lightslategrey;
+}
+
+#input {
+    width: 40%;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+#button-impressum {
+    width: 40%;
+    font-size: 10px;
+    border-radius: 8px;
+    border: solid black 1px;
+}
+
+#containerLogin {
+
+    border: solid grey 1px;
+    margin: auto;
+    width: 35%;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: rgba(210, 210, 210, 0.49);
+    
+  
+  padding: 10px;
+    
+
+}
+
+#emailInput {
+    margin-top: 6px;
+    
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: large;
+    
+    border: solid black 2px;
+}
+
+#passwordInput {
+    margin-top: 6px;
+    
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: large;
+    border: solid black 2px;
+}
+
+#vorname {
+    margin-top: 8px;
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: large;
+    border: solid black 2px;
+
+}
+
+#nachname {
+    margin-top: 6px;
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: large;
+    border: solid black 2px;
+}
+
+#passwordRepeatInput {
+    margin-top: 6px;
+    
+    border: solid black 1px;
+    border-radius: 10px;
+    width: 80%;
+    font-size: large;
+    border: solid black 2px;
+}
+
+#loginButton {
+    background-color: rgb(46, 216, 188);
+    border: none;
+    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 20%;
+}

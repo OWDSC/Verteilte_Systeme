@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="lib/bootstrap_v4.min.css">
+        <link rel="stylesheet" href="SavedStyles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+        <script src="lib/jquery_v3.2.1.min.js"></script>
+        <script src="lib/popper_v1.12.9.min.js"></script>
+        <script src="lib/bootstrap_v4.min.js" ></script>
+        <script src="lib/elaspix_lookupDropdown.js" ></script>
+        <script src="lib/elaspix_inputtext.js" ></script>
+        <script src="lib/elaspix_eventclock.js" ></script>
+        <script src="lib/elaspix_dropdown_desktop.js" ></script>
+        <script src="lib/elaspix_verwaltung.js" ></script>	
+        <script src="lib/jquery.md5.js" ></script>
+        <script src="SavedStyles.js"></script>
+
+        <nav class="navbar navbar-expand-lg navbar bg" style="background-color: rgba(210, 210,210, 0.49);color:black;">
+            <a class="navbar-brand" href="landingpage-new.html"><img src="pics/inspire-me-logo1.png" width="35%"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" style="margin-left: 40px;color: black;" href="SavedStyles.html"><b>Saved Styles</b></a>
+                </li>
+                <li>
+                    <p style="font-size: 12px;color: black;"></p>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" style="margin-left: 40px;color: black;" href="getInspired.html"><b>InspireMe</b></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link"style="margin-left: 40px;color:black;" href="Style-Editor.html"><b>Style-Editor</b></a>
+                </li>
+              </ul>
+              <button id="button-navbar"  onclick="location.href='inspireme_login.html';"><b>SIGN IN</b></button>
+            </div>
+          </nav>
+    
+        
+
+    </head>
+
+    <body>
+
+        <h1 class="text-center" style="margin-top: 40px;margin-bottom: 30px;">Gespeicherte Styles</h1>
+       
+       <div class="container-fluid" id="card-container">
+        <div class="row">
+               
+            <div class="col-md-4">
+
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" id="style1" >
+                    <img class="card-img1" src="pics/cap.jpg" id="picCap1" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto; margin-top: 10px;">
+                    <img class="card-img2" src="pics/pullover.png" id="picShirt1" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/hose1.png" id="picHose1" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/schuh1.png" id="picSchuh1" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b></b></h4>
+                            </p>
+                    </div>
+                  </div>
+
+               </div>
+            
+            <div class="col-md-4">
+
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" id="style2" >
+                    <img class="card-img1" src="pics/cap.jpg" id="picCap2" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img2" src="pics/pullover2.png" id="picShirt2" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/hose3.png" id="picHose2" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/schuh2.png" id="picSchuh2" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b>xxxxxxxxx</b></h4>
+                            </p>
+                    </div>
+                  </div>
+
+               </div>
+
+
+            <div class="col-md-4">
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" id="style3">
+                    <img class="card-img1" src="pics/cap2.jpg" id="picCap3" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img2" src="pics/pullover3.png" id="picShirt3" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/hose3.png" id="picHose3" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/schuh3.png" id="picSchuh3" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b>xxxxxxxxx</b></h4>
+                            </p>
+                    </div>
+                    </div>
+                  </div>
+
+               </div>
+
+            
+
+
+        
+
+        <div class="row" style="margin-top: 60px;">
+            <div class="col-md-4">
+
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" style="style4">
+                    <img class="card-img1" src="" id="picCap4" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img2" src="pics/hilfiger-pullover.png" id="picShirt4" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/jeans.png" id="picHose4" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/nike-sneaker.png" id="picSchuh4" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b>xxxxxxxxx</b></h4>
+                            </p>
+                    </div>
+                  </div>
+
+               </div>
+
+
+            
+
+            <div class="col-md-4">
+
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" id="style5">
+                    <img class="card-img1" src="" id="picCap5" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img2" src="pics/nike-pullover.png" id="picShirt5" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/chino.png" id="picHose5" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/yeezy.png" id="picSchuh5" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b>xxxxxxxxx</b></h4>
+                            </p>
+                    </div>
+                  </div>
+
+               </div>
+
+
+            
+
+            <div class="col-md-4">
+
+                <div class="card" style="width: 14rem;display: block;margin-left: auto;margin-right: auto;" id="style6">
+                    <img class="card-img1" id="picCap6" style="width: 80%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img2" src="pics/north-face-hoodie.png" id="picShirt6" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img3" src="pics/nike-jogginghose.png" id="picHose6" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    <img class="card-img4" src="pics/yeezy-onyx.png" id="picSchuh6" style="width: 40%;text-align: center; display: block;
+                    margin-left: auto;
+                    margin-right: auto;margin-top: 10px;">
+                    
+                    <div class="card-body">
+                        <p>
+                            <h4 id="code-style" class="text-center"><b>xxxxxxxxx</b></h4>
+                            </p>
+                    </div>
+                  </div>
+
+               </div>
+
+
+            </div>
+        </div>
+
+       </div>
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        <div class="container-fluid" id="impressum">
+            <hr style="border: solid grey 1px;">
+            <div class="row" id="row1" style="margin-top: 0px;">
+                
+                <div class="col-md-2" style="margin-top: 10px;">
+                    <p style="font-size: 10px;" class="text-center">
+                        <b>Subscribe to InspireMe via Email</b> <br>
+                        Excepteur sint occaecat cupidatat non proident, sunt in 
+             
+                         culpa qui officia  
+                    </p>
+                    
+                    <input type="email" id="input" placeholder="Email">
+                    <button  id="button-impressum">SUBSCRIBE</button >
+                </div>
+                
+                <div class="col-md-2">
+                    <br>
+                </div>
+        
+                <div class="col-md-2">
+                    <br>
+                </div>
+                
+        
+                <div class="col-md-2" style="margin-top: 10px;" >
+                    <p style="font-size: 10px;" class="text-center" >
+                        <b>+44 345 678 903</b> <br> 
+                        <b>ADOBEXD@MAIL.COM</b> <br> 
+                        <b>FIND A STORE</b> <br> 
+                        
+                    </p>
+                </div>
+        
+                <div class="col-md-2" style="margin-top: 10px;">
+                    <p style="font-size: 10px;" class="text-center">
+                        <b>CONTACT US</b> <br>
+                        <b>ORDERING 6 PAYMENT</b> <br>
+                        <b>SHIPPING</b> <br>
+                        <b>RETURNS</b> <br>
+                        <b>FAQ</b> <br>
+                        <b>SIZING GUIDE</b> <br>
+                        
+                        
+                    </p>
+                </div>
+                <div class="col-md-2" style="margin-top: 10px;" >
+                    <p style="font-size: 10px;" class="text-center">
+                        <b>ABOUT ADOBE XD KIT</b> <br>
+                        <b>WORK WITH US</b> <br>
+                        <b>PRIVACY POLICY</b> <br>
+                        <b>TERMS & CONDITIONS</b> <br>
+                        <b>PRESS ENQUIRIES</b> <br>
+                        
+                        
+                    </p>
+                </div>
+               
+            </div>
+        
+            <div class="row" id="row2" >
+                <div class="col">
+                <p style="font-size: 15px;margin-top: 7px"><b>&#169 InspireMe</b></p>
+
+            </div>
+
+                <div class="col-md-offset-*">
+                    
+                    <a href="https://www.instagram.com/"><img src="pics/logoInstagramm.png" style="width: 30px;margin-top: 7px;margin-right: 10px;" ></a>
+                    <a href="https://twitter.com/"><img src="pics/logoTwitter.png" style="width: 30px;margin-top: 7px;margin-right: 15px;" ></a>
+                   
+                </div>
+        
+            </div>
+        </div>
+        
+        </div>
+    </body>
+</html>

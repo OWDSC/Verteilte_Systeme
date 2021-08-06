@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+  
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="lib/bootstrap_v4.min.css">
+    <link rel="stylesheet" href="StyleEditor.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+
+    <title>Style Editor</title>
+
+    <script src="lib/jquery_v3.2.1.min.js"></script>
+    <script src="lib/popper_v1.12.9.min.js"></script>
+    <script src="lib/bootstrap_v4.min.js" ></script>
+	<script src="lib/elaspix_lookupDropdown.js" ></script>
+	<script src="lib/elaspix_inputtext.js" ></script>
+	<script src="lib/elaspix_eventclock.js" ></script>
+	<script src="lib/elaspix_dropdown_desktop.js" ></script>
+	<script src="lib/elaspix_verwaltung.js" ></script>	
+    <script src="lib/jquery.md5.js" ></script>
+    <script src="Style-Editor.js"></script>
+    <script src="login.js"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+        <a class="navbar-brand" href="landingpage-new.html" style="color: black;">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="margin-left: 40px;" href="SavedStyles.html"><b>Saved Styles</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" style="margin-left: 40px;" href=""><b>InspireMe</b></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link"style="margin-left: 40px;" href="StyleEditor.html"><b>Style-Editor</b></a>
+            </li>
+          </ul>
+          <button id="button-navbar"  onclick="location.href='inspireme_login.html';"><b>SIGN IN</b></button>
+        </div>
+      </nav>
+
+</head>
+
+
+<body>
+
+    <div class="container-fluid" id="container-editor">
+       <div class="row">
+           <div class="col-md-12">
+           <br><br>
+            <h1 class="text-center">Style-Editor</h1>
+        </div>
+       </div>
+
+       <div class="container-fluid" id="container2">
+            
+        <br>
+        
+        <div class="main">
+
+
+            <!-- Another variation with a button -->
+            <div class="input-group">
+              <input type="text" id="input-code" class="form-control input-lg" placeholder="Suche hier nach Styles,Tags,..">
+              <div class="input-group-append">
+                <button class="btn btn-secondary btn-lg" type="button" id="button" onclick="searchStyle();">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </div>
+            
+            
+          </div>
+          <br>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container" style="width: 50%;">
+                    <div class="form-group mt-4 mb-4">
+                                <label for="mitarbeiter-input">Kopfbedeckung</label>          
+                              <div class="input-group">
+                                <div class="input-group-prepend" >
+                                  <button id="mitarbeiter-button" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artikel auswählen</button>
+                                  <div class="dropdown-menu" id="mitarbeiter-dropdown">                 
+                                  
+                                  </div>
+                                </div>
+                                
+                                <input type="text" id="mitarbeiter-input" name="mitarbeiter-input" class="form-control" placeholder="Suchen" aria-label="Text input with dropdown button">
+                              </div>
+                              <small id="mitarbeiter-help" class="form-text text-muted"></small>
+                          </div><!--form group-->           
+                    </div>
+                    </div>
+            </div>
+  
+      <div class="container">
+        <div class="row">       
+        <div class="col-md-12">
+                    <div class="container" id="container-cap" >
+                    <img src="pics/cap2.jpg" id="bild-kopfbedeckung" style="width: 100px;height: 100px ; margin-top: 15px" >
+                </div>
+            </div>
+          </div>
+        </div>
+        
+                    
+          <br>
+
+         <div class="row">
+             <div class="col-md-12">
+                <div class="container" style="width: 50%;">
+                    <div class="form-group mt-4 mb-4">
+                                    <label for="shirt-input">Sweater,Shirts..</label>          
+                                  <div class="input-group">
+                                    <div class="input-group-prepend" >
+                                      <button id="shirt-button" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artikel auswählen</button>
+                                      <div class="dropdown-menu" id="shirt-dropdown">                 
+                                      
+                                      </div>
+                                    </div>
+                                    
+                                    <input type="text" id="shirt-input" name="shirt-input" class="form-control" placeholder="Suchen" aria-label="Text input with dropdown button">
+                                  </div>
+                                  <small id="shirt-help" class="form-text text-muted"></small>
+                             </div><!--form group-->
+
+                            </div>
+
+                            
+            </div>
+               
+            </div>
+
+          </div>
+
+            <br>
+
+            <div class="row">
+            <div class="col-md-12">
+                <div class="container" id="container-shirt">
+                <img src="pics/pullover3.png" id="bild-shirt" style="width: 90px; margin-top: 30%;vertical-align: middle;" >
+            </div>
+        </div>
+        </div>
+
+
+    <div class="row" style="margin-top: 60px;">
+        <div class="col-md-12">
+           <div class="container" style="width: 50%;margin-top: 30px;">
+               <div class="form-group mt-4 mb-4">
+                               <label for="hose-input">Hosen</label>          
+                             <div class="input-group">
+                               <div class="input-group-prepend" >
+                                 <button id="hose-button" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artikel auswählen</button>
+                                 <div class="dropdown-menu" id="hose-dropdown">                 
+                                 
+                                 </div>
+                               </div>
+                               
+                               <input type="text" id="hose-input" name="mitarbeiter-input" class="form-control" placeholder="Suchen" aria-label="Text input with dropdown button">
+                             </div>
+                             <small id="hose-help" class="form-text text-muted"></small>
+                        </div><!--form group-->
+
+                       </div>
+                      </div>
+                       
+       
+          
+       </div>
+       <br>
+       <div class="row">
+       <div class="col-md-12">
+           <div class="container" id="container-hose">
+           <img src="pics/hose2.png" id="bild-hose" style="width: 90px;height: 180px;" >
+       </div>
+   </div>
+   </div>
+
+   <br>
+
+<div class="row" style="margin-top: 60px;">
+    <div class="col-md-12">
+       <div class="container" style="width: 50%;margin-top: 80px;">
+           <div class="form-group mt-4 mb-4">
+                           <label for="schuhe-input">Schuhe</label>          
+                         <div class="input-group">
+                           <div class="input-group-prepend" >
+                             <button id="schuhe-button" class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Artikel auswählen</button>
+                             <div class="dropdown-menu" id="schuhe-dropdown">                 
+                             
+                             </div>
+                           </div>
+                           
+                           <input type="text" id="schuhe-input" name="schuhe-input" class="form-control" placeholder="Suchen" aria-label="Text input with dropdown button">
+                         </div>
+                         <small id="schuhe-help" class="form-text text-muted"></small>
+                    </div><!--form group-->
+
+                   </div>
+                   
+   
+      
+   </div>
+  </div>
+
+
+  <div class="row"> 
+   <div class="col-md-12">
+       <div class="container" id="container-schuh">
+       <img src="pics/schuh2.png" id="bild-schuh" style="width: 90px;height: 100px;margin-top: 50%;">
+   </div>
+</div>
+
+
+</div>
+
+<br><br><br><br>
+<div class="row">
+    <div class="col-md-6" style="text-align: center;">
+
+        <button id="button-editor" type="button" onclick="saveStyle();"><b>SAVE STYLE</b></button>
+
+    </div>
+    <div class="col-md-6">
+
+        <button id="button-editor" type="button" onclick="location.href='getInspired.html';"><b>INSPIRE ME</b></button>
+
+        
+   
+
+</div>
+</div>
+<br><br><br>
+</div>
+
+<div class="container-fluid" id="container-neuerArtikel">
+  <div class="row">
+    <div class="col">
+    <h2 class="text-center">Neuen Artikel hinzufügen</h2>
+  </div>
+  </div>
+  <div class="row" style="margin-top: 20px;">
+    <div class="col-md-4">
+      <input type="text" id="artikelName" style="border-radius: 5px;">
+      <label for="artikelName" style="display: block;">Artikelbezeichnung</label>
+    </div>
+    <div class="col-md-4">
+      <input type="text" id="artikelURL" style="border-radius: 5px;">
+      <label for="artikelURL" style="display: block;">Link zu Bild</label>
+    </div>
+    <div class="col-md-4">
+      <button id="button-editor" type="button" style="height: 30px;" onclick="neuesBild();"><b>Anlegen</b></button>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="container-fluid" style="margin-top:50px;">
+    <h2 class="text-center">Du willst dich von anderen Nutzern <br> inspirieren lassen?</h2>
+</div>
+
+<div class="container-fluid" style="margin-top: 40px;font-size: 20px;background-color: #20C997;">
+    <br>
+    <p class="text-center">Hier hast du die Möglichkeit Styles von anderen anzusehen, <br> diese zu speichern und selbst zu bearbeiten.</p>
+    <br>
+</div>
+
+   
+
+
+
+
+    
+
+<div class="container-fluid" id="impressum">
+    <hr style="border: solid 1px;">
+    <div class="row" id="row1" style="margin-top: 15px;">
+        
+        <div class="col-md-2" style="margin-top: 15px;">
+            <p style="font-size: 10px;" class="text-center">
+                <b>Subscribe to InspireMe via Email</b> <br>
+                Excepteur sint occaecat cupidatat non proident, sunt in 
+     
+                 culpa qui officia  
+            </p>
+            
+            <input type="email" id="input" placeholder="Email">
+            <button  id="button-impressum">SUBSCRIBE</button >
+        </div>
+        
+        <div class="col-md-2">
+            <br>
+        </div>
+
+        <div class="col-md-2">
+            <br>
+        </div>
+        
+
+        <div class="col-md-2" style="margin-top: 15px;" >
+            <p style="font-size: 10px;" class="text-center" >
+                <b>+44 345 678 903</b> <br> 
+                <b>ADOBEXD@MAIL.COM</b> <br> 
+                <b>FIND A STORE</b> <br> 
+                
+            </p>
+        </div>
+
+        <div class="col-md-2" style="margin-top: 15px;">
+            <p style="font-size: 10px;" class="text-center">
+                <b>CONTACT US</b> <br>
+                <b>ORDERING 6 PAYMENT</b> <br>
+                <b>SHIPPING</b> <br>
+                <b>RETURNS</b> <br>
+                <b>FAQ</b> <br>
+                <b>SIZING GUIDE</b> <br>
+                
+                
+            </p>
+        </div>
+        <div class="col-md-2" style="margin-top: 15px;" >
+            <p style="font-size: 10px;" class="text-center">
+                <b>ABOUT ADOBE XD KIT</b> <br>
+                <b>WORK WITH US</b> <br>
+                <b>PRIVACY POLICY</b> <br>
+                <b>TERMS & CONDITIONS</b> <br>
+                <b>PRESS ENQUIRIES</b> <br>
+                
+                
+            </p>
+        </div>
+       
+    </div>
+
+    <div class="row" id="row2" >
+        <br>
+        <p style="font-size: 10px;"><b>&#169 InspireMe</b></p>
+
+    </div>
+</div>
+
+</div>
+
+</body>
